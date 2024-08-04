@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import mainLogo from '@/assets/logo.png';
 import classes from './main-header.module.css';
+import NavLink from './nav-link';
 
 export default function MainHeader() {
   return (
@@ -13,10 +14,10 @@ export default function MainHeader() {
       <nav className={classes.nav}>
         <ul style={{textAlign: "center", listStyle: "none"}}>
           <li>
-            <Link href="/meals">Browse Meals</Link>
+            <NavLink link='/meals'>Browse Meals</NavLink>
           </li>
           <li>
-            <Link href="/community">Foodies Community</Link>
+            <NavLink link='/community'>Foodies Community</NavLink>
           </li>
         </ul>
       </nav>
